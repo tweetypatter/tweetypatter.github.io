@@ -6,53 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHONEBOOK</title>
     <style>
-        *{
-            font-size: 2vw;
-        }
-        table{
-            width: auto;
-            margin: 5vh auto;
+      
+         @media (max-width: 800px) {
+            * {
+                width: 100%;
+            }
         }
        table,th,td{
-            border: 0.2vw dotted orange;
+            border: 1px dotted rgb(231, 3, 151);
             border-collapse: collapse;
             padding: 1vw;
         }
         tr:nth-child(odd){
-            background-color: antiquewhite;
+            background-color: #efd2e8;
         }
-        @media (max-width: 600px) {
- *{
-    font-size: 9vw; 
-  }
-        }
+       h1 {
+        text-align: center;
+       }
+       hr {
+        width: 30vw;
+       }
     </style>
 </head>
 <body>
+    <h1>เบอร์โทรฉุกเฉิน</h1>
+    <hr>
+    <h2>เบอร์โทรฉุกเฉินเกี่ยวกับโควิด-19</h2>
     <table>
+        <th>Name</th>
+        <th>Tel</th>
         <tr>
-            <th>Name</th>
-            <th>Tel no.</th>
+            <td>กรมการแพทย์ ช่วยเหลือผู้ติดเชื้อแต่ไม่มีเตียงรักษาและรับคำแนะนำการปฏิบัติตัว</td>
+            <td>1668</td>
         </tr>
         <tr>
-            <td>ohm</td>
-            <td>0857054020</td>
+            <td>สายด่วนสุขภาพจิต ขอคำแนะนำเมื่อเกิดภาวะเครียด</td>
+            <td>1323</td>
         </tr>
         <tr>
-            <td>KFC</td>
-            <td>1150</td>
+            <td>ศูนย์บริการข้อมูลสอบถามติดตามสถานการณ์โควิด-19 และขอคำแนะนำหรือร้องเรียนในช่วงวิกฤติโควิด-19</td>
+            <td>1111</td>
         </tr>
         <tr>
-            <td>Pizza Hut</td>
-            <td>1112</td>
+            <td>กรมควบคุมโรค สอบถามสถานการณ์ของการระบาดโควิด-19</td>
+            <td>1422</td>
         </tr>
         <tr>
-            <td>Yayoi</td>
-            <td>1642</td>
+            <td>สำนักงานประกันสังคม (สปส.) ตรวจสอบสิทธิประกันสังคม และขอรับเงินชดเชยการว่างงานช่วงโควิด-19</td>
+            <td>1506</td>
         </tr>
         <tr>
-            <td>ohm</td>
-            <td>0857054020</td>
+            <td>สำนักงานคณะกรรมการอาหารและยา (อย.) หากพบผู้ประกอบการจำหน่ายเจลล้างมือ สบู่ล้างมือ หรือหน้ากากอนามัยที่ไม่ได้คุณภาพ</td>
+            <td>1556</td>
+        </tr>
+        <tr>
+            <td>กรมการค้าภายใน เมื่อไม่ได้รับความเป็นธรรมจากการสินค้า และบริการในช่วงโควิด-19	</td>
+            <td>1569</td>
+        </tr>
+    </table>
+    <h2>เบอร์โทรฉุกเฉินด้านการแพทย์</h2>
+    <table>
+        <th>Name</th>
+        <th>Tel</th>
+        <tr>
+            <td>เมื่อพบเจออุบัติเหตุทางน้ำ</td>
+            <td>1196</td>
+        </tr>
+        <tr>
+            <td>หน่วยแพทย์กู้ชีวิต วชิรพยาบาล</td>
+            <td>1554</td>
+        </tr>
+        <tr>
+            <td>สถาบันการแพทย์ฉุกเฉินแห่งชาติ (ทั่วไทย) เมื่อเจอเหตุด่วนเหตุร้ายหรือผู้ได้รับบาดเจ็บ</td>
+            <td>1669</td>
+        </tr>
+        <tr>
+            <td>กรมควบคุมโรค สอบถามสถานการณ์ของการระบาดโควิด-19</td>
+            <td>1691</td>
+        </tr>
+        <tr>
+            <td>โรงพยาบาลตำรวจ</td>
+            <td>1506</td>
         </tr>
     </table>
 </body>
