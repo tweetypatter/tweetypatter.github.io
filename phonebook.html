@@ -4,90 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHONEBOOK</title>
+    <title>Phonebook</title>
     <style>
-      
-         @media (max-width: 800px) {
-            * {
-                width: 100%;
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 30px 30px 0px 30px;
+        }
+        .header {
+            padding: 5px;
+            text-align: center;
+        }
+    
+        .header h1 {
+            font-size: 50px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+        }
+        tr:nth-of-type(odd) { 
+            background: #f4ddec; 
+        }
+        th { 
+            background: #d847af; 
+            color: white; 
+            font-weight: bold; 
+            text-align: center; 
+        }
+        td, th { 
+            padding: 6px; 
+            border: 1px dashed #d275ad; 
+        }
+        @media 
+        only screen and (min-width: 480px) and (max-width: 1200px)  {
+            thead tr { 
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            
+            tr { border: 1px dashed #d847af; }
+            td { 
+                border: none;
+                border: 1px dashed #d847af; 
+                position: relative;
             }
         }
-       table,th,td{
-            border: 1px dotted rgb(231, 3, 151);
-            border-collapse: collapse;
-            padding: 1vw;
-        }
-        tr:nth-child(odd){
-            background-color: #efd2e8;
-        }
-       h1 {
-        text-align: center;
-       }
-       hr {
-        width: 30vw;
-       }
     </style>
 </head>
 <body>
-    <h1>เบอร์โทรฉุกเฉิน</h1>
-    <hr>
+    <div class="header">
+        <h1>เบอร์โทรฉุกเฉิน</h1>
+    </div>
     <h2>เบอร์โทรฉุกเฉินเกี่ยวกับโควิด-19</h2>
-    <table>
-        <th>Name</th>
-        <th>Tel</th>
-        <tr>
-            <td>กรมการแพทย์ ช่วยเหลือผู้ติดเชื้อแต่ไม่มีเตียงรักษาและรับคำแนะนำการปฏิบัติตัว</td>
-            <td>1668</td>
-        </tr>
-        <tr>
-            <td>สายด่วนสุขภาพจิต ขอคำแนะนำเมื่อเกิดภาวะเครียด</td>
-            <td>1323</td>
-        </tr>
-        <tr>
-            <td>ศูนย์บริการข้อมูลสอบถามติดตามสถานการณ์โควิด-19 และขอคำแนะนำหรือร้องเรียนในช่วงวิกฤติโควิด-19</td>
-            <td>1111</td>
-        </tr>
-        <tr>
-            <td>กรมควบคุมโรค สอบถามสถานการณ์ของการระบาดโควิด-19</td>
-            <td>1422</td>
-        </tr>
-        <tr>
-            <td>สำนักงานประกันสังคม (สปส.) ตรวจสอบสิทธิประกันสังคม และขอรับเงินชดเชยการว่างงานช่วงโควิด-19</td>
-            <td>1506</td>
-        </tr>
-        <tr>
-            <td>สำนักงานคณะกรรมการอาหารและยา (อย.) หากพบผู้ประกอบการจำหน่ายเจลล้างมือ สบู่ล้างมือ หรือหน้ากากอนามัยที่ไม่ได้คุณภาพ</td>
-            <td>1556</td>
-        </tr>
-        <tr>
-            <td>กรมการค้าภายใน เมื่อไม่ได้รับความเป็นธรรมจากการสินค้า และบริการในช่วงโควิด-19	</td>
-            <td>1569</td>
-        </tr>
-    </table>
+        <table class="fluid">
+            <th>Name</th>
+            <th>Tel</th>
+            <tr>
+                <td>กรมการแพทย์ ช่วยเหลือผู้ติดเชื้อแต่ไม่มีเตียงรักษาและรับคำแนะนำการปฏิบัติตัว</td>
+                <td>1668</td>
+            </tr>
+            <tr>
+                <td rowspan="2">สายด่วนสุขภาพจิต ขอคำแนะนำเมื่อเกิดภาวะเครียด</td>
+                <td>1323</td>
+            </tr>
+            <tr>
+                <td>1324</td>
+            </tr>
+            <tr>
+                <td>ศูนย์บริการข้อมูลสอบถามติดตามสถานการณ์โควิด-19 และขอคำแนะนำหรือร้องเรียนในช่วงวิกฤติโควิด-19</td>
+                <td>1111</td>
+            </tr>
+            <tr>
+                <td>กรมควบคุมโรค สอบถามสถานการณ์ของการระบาดโควิด-19</td>
+                <td>1422</td>
+            </tr>
+            <tr>
+                <td>สำนักงานประกันสังคม (สปส.) ตรวจสอบสิทธิประกันสังคม และขอรับเงินชดเชยการว่างงานช่วงโควิด-19</td>
+                <td>1506</td>
+            </tr>
+            <tr>
+                <td>สำนักงานคณะกรรมการอาหารและยา (อย.) หากพบผู้ประกอบการจำหน่ายเจลล้างมือ สบู่ล้างมือ หรือหน้ากากอนามัยที่ไม่ได้คุณภาพ</td>
+                <td>1556</td>
+            </tr>
+            <tr>
+                <td>กรมการค้าภายใน เมื่อไม่ได้รับความเป็นธรรมจากการสินค้า และบริการในช่วงโควิด-19	</td>
+                <td>1569</td>
+            </tr>
+        </table>
     <h2>เบอร์โทรฉุกเฉินด้านการแพทย์</h2>
-    <table>
-        <th>Name</th>
-        <th>Tel</th>
-        <tr>
-            <td>เมื่อพบเจออุบัติเหตุทางน้ำ</td>
-            <td>1196</td>
-        </tr>
-        <tr>
-            <td>หน่วยแพทย์กู้ชีวิต วชิรพยาบาล</td>
-            <td>1554</td>
-        </tr>
-        <tr>
-            <td>สถาบันการแพทย์ฉุกเฉินแห่งชาติ (ทั่วไทย) เมื่อเจอเหตุด่วนเหตุร้ายหรือผู้ได้รับบาดเจ็บ</td>
-            <td>1669</td>
-        </tr>
-        <tr>
-            <td>กรมควบคุมโรค สอบถามสถานการณ์ของการระบาดโควิด-19</td>
-            <td>1691</td>
-        </tr>
-        <tr>
-            <td>โรงพยาบาลตำรวจ</td>
-            <td>1506</td>
-        </tr>
-    </table>
+        <table class="fluid">
+            <th>Name</th>
+            <th>Tel</th>
+            <tr>
+                <td>เมื่อพบเจออุบัติเหตุทางน้ำ</td>
+                <td>1196</td>
+            </tr>
+            <tr>
+                <td>หน่วยแพทย์กู้ชีวิต วชิรพยาบาล</td>
+                <td>1554</td>
+            </tr>
+            <tr>
+                <td>สถาบันการแพทย์ฉุกเฉินแห่งชาติ (ทั่วไทย) เมื่อเจอเหตุด่วนเหตุร้ายหรือผู้ได้รับบาดเจ็บ</td>
+                <td>1669</td>
+            </tr>
+            <tr>
+                <td>กรมควบคุมโรค สอบถามสถานการณ์ของการระบาดโควิด-19</td>
+                <td>1691</td>
+            </tr>
+            <tr>
+                <td>โรงพยาบาลตำรวจ</td>
+                <td>1506</td>
+            </tr>
+        </table>
 </body>
 </html>
